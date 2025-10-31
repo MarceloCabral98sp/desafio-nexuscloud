@@ -38,7 +38,7 @@ export class OrderPage implements OnInit {
   this.orderService.saveOrder(this.order).subscribe({
     next: (res) => {
       this.snackBar.open('Pedido salvo com sucesso!', 'Fechar', {
-        duration: 3000, // 3 segundos
+        duration: 3000, 
         horizontalPosition: 'right',
         verticalPosition: 'top',
       });

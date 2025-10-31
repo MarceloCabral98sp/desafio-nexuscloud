@@ -14,6 +14,1437 @@
         }
       ],
       "total": 14668.83
+    },
+    {
+      "id": "85ea",
+      "orderNumber": "SNG778",
+      "orderDate": "2025-10-31T22:32:40.691Z",
+      "items": [
+        {
+          "code": 12,
+          "description": "teste",
+          "quantity": "12",
+          "unitPrice": 2.33,
+          "totalPrice": 27.96
+        }
+      ],
+      "total": 27.96
+    },
+    {
+      "id": "bac4",
+      "orderNumber": "FTX551",
+      "orderDate": "2025-10-31T22:39:17.729Z",
+      "items": [
+        {
+          "code": "1000",
+          "description": "Produto 1",
+          "quantity": "4",
+          "unitPrice": 50.74,
+          "totalPrice": 245.18
+        },
+        {
+          "code": "1001",
+          "description": "Produto 2",
+          "quantity": "3.684",
+          "unitPrice": 48.62,
+          "totalPrice": 179.12
+        },
+        {
+          "code": "1002",
+          "description": "Produto 3",
+          "quantity": "9",
+          "unitPrice": 18.5,
+          "totalPrice": 184.15
+        },
+        {
+          "code": "1003",
+          "description": "Produto 4",
+          "quantity": "1.881",
+          "unitPrice": 80.54,
+          "totalPrice": 151.5
+        },
+        {
+          "code": "1004",
+          "description": "Produto 5",
+          "quantity": "5",
+          "unitPrice": 57.9,
+          "totalPrice": 328.47
+        },
+        {
+          "code": "1005",
+          "description": "Produto 6",
+          "quantity": "9.323",
+          "unitPrice": 70.84,
+          "totalPrice": 660.44
+        },
+        {
+          "code": "1006",
+          "description": "Produto 7",
+          "quantity": "10",
+          "unitPrice": 46.29,
+          "totalPrice": 485.91
+        },
+        {
+          "code": "1007",
+          "description": "Produto 8",
+          "quantity": "2.323",
+          "unitPrice": 56.34,
+          "totalPrice": 130.88
+        },
+        {
+          "code": "1008",
+          "description": "Produto 9",
+          "quantity": "10",
+          "unitPrice": 79.57,
+          "totalPrice": 862.46
+        },
+        {
+          "code": "1009",
+          "description": "Produto 10",
+          "quantity": "7.429",
+          "unitPrice": 45.53,
+          "totalPrice": 338.24
+        },
+        {
+          "code": "1010",
+          "description": "Produto 11",
+          "quantity": "2",
+          "unitPrice": 19.86,
+          "totalPrice": 43.16
+        },
+        {
+          "code": "1011",
+          "description": "Produto 12",
+          "quantity": "9.074",
+          "unitPrice": 42.16,
+          "totalPrice": 382.56
+        },
+        {
+          "code": "1012",
+          "description": "Produto 13",
+          "quantity": "1",
+          "unitPrice": 93.95,
+          "totalPrice": 163.75
+        },
+        {
+          "code": "1013",
+          "description": "Produto 14",
+          "quantity": "7.228",
+          "unitPrice": 25.77,
+          "totalPrice": 186.27
+        },
+        {
+          "code": "1014",
+          "description": "Produto 15",
+          "quantity": "3",
+          "unitPrice": 34.97,
+          "totalPrice": 126.77
+        },
+        {
+          "code": "1015",
+          "description": "Produto 16",
+          "quantity": "2.195",
+          "unitPrice": 17.51,
+          "totalPrice": 38.43
+        },
+        {
+          "code": "1016",
+          "description": "Produto 17",
+          "quantity": "2",
+          "unitPrice": 77.44,
+          "totalPrice": 214.04
+        },
+        {
+          "code": "1017",
+          "description": "Produto 18",
+          "quantity": "6.857",
+          "unitPrice": 44.94,
+          "totalPrice": 308.15
+        },
+        {
+          "code": "1018",
+          "description": "Produto 19",
+          "quantity": "2",
+          "unitPrice": 31,
+          "totalPrice": 75.7
+        },
+        {
+          "code": "1019",
+          "description": "Produto 20",
+          "quantity": "2.084",
+          "unitPrice": 64.97,
+          "totalPrice": 135.4
+        },
+        {
+          "code": "1020",
+          "description": "Produto 21",
+          "quantity": "4",
+          "unitPrice": 32.59,
+          "totalPrice": 131.01
+        },
+        {
+          "code": "1021",
+          "description": "Produto 22",
+          "quantity": "7.996",
+          "unitPrice": 81.06,
+          "totalPrice": 648.16
+        },
+        {
+          "code": "1022",
+          "description": "Produto 23",
+          "quantity": "10",
+          "unitPrice": 74.38,
+          "totalPrice": 777.87
+        },
+        {
+          "code": "1023",
+          "description": "Produto 24",
+          "quantity": "7.822",
+          "unitPrice": 26.34,
+          "totalPrice": 206.03
+        },
+        {
+          "code": "1024",
+          "description": "Produto 25",
+          "quantity": "9",
+          "unitPrice": 76.19,
+          "totalPrice": 698.81
+        },
+        {
+          "code": "1025",
+          "description": "Produto 26",
+          "quantity": "5.613",
+          "unitPrice": 48.62,
+          "totalPrice": 272.9
+        },
+        {
+          "code": "1026",
+          "description": "Produto 27",
+          "quantity": "3",
+          "unitPrice": 92.47,
+          "totalPrice": 359.89
+        },
+        {
+          "code": "1027",
+          "description": "Produto 28",
+          "quantity": "1.063",
+          "unitPrice": 83.55,
+          "totalPrice": 88.81
+        },
+        {
+          "code": "1028",
+          "description": "Produto 29",
+          "quantity": "1",
+          "unitPrice": 30.46,
+          "totalPrice": 32.44
+        },
+        {
+          "code": "1029",
+          "description": "Produto 30",
+          "quantity": "4.198",
+          "unitPrice": 9.93,
+          "totalPrice": 41.69
+        },
+        {
+          "code": "1030",
+          "description": "Produto 31",
+          "quantity": "8",
+          "unitPrice": 33.73,
+          "totalPrice": 302.25
+        },
+        {
+          "code": "1031",
+          "description": "Produto 32",
+          "quantity": "3.163",
+          "unitPrice": 48.01,
+          "totalPrice": 151.86
+        },
+        {
+          "code": "1032",
+          "description": "Produto 33",
+          "quantity": "5",
+          "unitPrice": 42.36,
+          "totalPrice": 230.1
+        },
+        {
+          "code": "1033",
+          "description": "Produto 34",
+          "quantity": "9.923",
+          "unitPrice": 59.28,
+          "totalPrice": 588.24
+        },
+        {
+          "code": "1034",
+          "description": "Produto 35",
+          "quantity": "4",
+          "unitPrice": 9.25,
+          "totalPrice": 43.1
+        },
+        {
+          "code": "1035",
+          "description": "Produto 36",
+          "quantity": "1.58",
+          "unitPrice": 93.3,
+          "totalPrice": 147.41
+        },
+        {
+          "code": "1036",
+          "description": "Produto 37",
+          "quantity": "8",
+          "unitPrice": 85.28,
+          "totalPrice": 762.32
+        },
+        {
+          "code": "1037",
+          "description": "Produto 38",
+          "quantity": "4.531",
+          "unitPrice": 8.64,
+          "totalPrice": 39.15
+        },
+        {
+          "code": "1038",
+          "description": "Produto 39",
+          "quantity": "10",
+          "unitPrice": 66.48,
+          "totalPrice": 697.84
+        },
+        {
+          "code": "1039",
+          "description": "Produto 40",
+          "quantity": "3.536",
+          "unitPrice": 4.84,
+          "totalPrice": 17.11
+        },
+        {
+          "code": "1040",
+          "description": "Produto 41",
+          "quantity": "2",
+          "unitPrice": 87.95,
+          "totalPrice": 199.03
+        },
+        {
+          "code": "1041",
+          "description": "Produto 42",
+          "quantity": "8.021",
+          "unitPrice": 60.15,
+          "totalPrice": 482.46
+        },
+        {
+          "code": "1042",
+          "description": "Produto 43",
+          "quantity": "4",
+          "unitPrice": 96.72,
+          "totalPrice": 478.47
+        },
+        {
+          "code": "1043",
+          "description": "Produto 44",
+          "quantity": "7.32",
+          "unitPrice": 52,
+          "totalPrice": 380.64
+        },
+        {
+          "code": "1044",
+          "description": "Produto 45",
+          "quantity": "1",
+          "unitPrice": 29.57,
+          "totalPrice": 36.81
+        },
+        {
+          "code": "1045",
+          "description": "Produto 46",
+          "quantity": "3.398",
+          "unitPrice": 2.51,
+          "totalPrice": 8.53
+        },
+        {
+          "code": "1046",
+          "description": "Produto 47",
+          "quantity": "6",
+          "unitPrice": 1.62,
+          "totalPrice": 11
+        },
+        {
+          "code": "1047",
+          "description": "Produto 48",
+          "quantity": "1.329",
+          "unitPrice": 63.08,
+          "totalPrice": 83.83
+        },
+        {
+          "code": "1048",
+          "description": "Produto 49",
+          "quantity": "4",
+          "unitPrice": 22.55,
+          "totalPrice": 93.61
+        },
+        {
+          "code": "1049",
+          "description": "Produto 50",
+          "quantity": "7.063",
+          "unitPrice": 76.63,
+          "totalPrice": 541.24
+        },
+        {
+          "code": "1050",
+          "description": "Produto 51",
+          "quantity": "6",
+          "unitPrice": 55.72,
+          "totalPrice": 365.52
+        },
+        {
+          "code": "1051",
+          "description": "Produto 52",
+          "quantity": "2.224",
+          "unitPrice": 3.2,
+          "totalPrice": 7.12
+        },
+        {
+          "code": "1052",
+          "description": "Produto 53",
+          "quantity": "7",
+          "unitPrice": 71.92,
+          "totalPrice": 572.63
+        },
+        {
+          "code": "1053",
+          "description": "Produto 54",
+          "quantity": "1.625",
+          "unitPrice": 67.3,
+          "totalPrice": 109.36
+        },
+        {
+          "code": "1054",
+          "description": "Produto 55",
+          "quantity": "4",
+          "unitPrice": 13.77,
+          "totalPrice": 68.57
+        },
+        {
+          "code": "1055",
+          "description": "Produto 56",
+          "quantity": "3.643",
+          "unitPrice": 15.05,
+          "totalPrice": 54.83
+        },
+        {
+          "code": "1056",
+          "description": "Produto 57",
+          "quantity": "7",
+          "unitPrice": 11.67,
+          "totalPrice": 84.37
+        },
+        {
+          "code": "1057",
+          "description": "Produto 58",
+          "quantity": "6.088",
+          "unitPrice": 9.32,
+          "totalPrice": 56.74
+        },
+        {
+          "code": "1058",
+          "description": "Produto 59",
+          "quantity": "2",
+          "unitPrice": 75.39,
+          "totalPrice": 173.85
+        },
+        {
+          "code": "1059",
+          "description": "Produto 60",
+          "quantity": "2.469",
+          "unitPrice": 17.54,
+          "totalPrice": 43.31
+        },
+        {
+          "code": "1060",
+          "description": "Produto 61",
+          "quantity": "2",
+          "unitPrice": 27.43,
+          "totalPrice": 64.02
+        },
+        {
+          "code": "1061",
+          "description": "Produto 62",
+          "quantity": "10.722",
+          "unitPrice": 58.06,
+          "totalPrice": 622.52
+        },
+        {
+          "code": "1062",
+          "description": "Produto 63",
+          "quantity": "9",
+          "unitPrice": 22.47,
+          "totalPrice": 208.72
+        },
+        {
+          "code": "1063",
+          "description": "Produto 64",
+          "quantity": "9.416",
+          "unitPrice": 5.81,
+          "totalPrice": 54.71
+        },
+        {
+          "code": "1064",
+          "description": "Produto 65",
+          "quantity": "7",
+          "unitPrice": 27.53,
+          "totalPrice": 220.18
+        },
+        {
+          "code": "1065",
+          "description": "Produto 66",
+          "quantity": "9.53",
+          "unitPrice": 87.89,
+          "totalPrice": 837.59
+        },
+        {
+          "code": "1066",
+          "description": "Produto 67",
+          "quantity": "1",
+          "unitPrice": 65.28,
+          "totalPrice": 84.99
+        },
+        {
+          "code": "1067",
+          "description": "Produto 68",
+          "quantity": "7.078",
+          "unitPrice": 85.98,
+          "totalPrice": 608.57
+        },
+        {
+          "code": "1068",
+          "description": "Produto 69",
+          "quantity": "7",
+          "unitPrice": 12.98,
+          "totalPrice": 96.43
+        },
+        {
+          "code": "1069",
+          "description": "Produto 70",
+          "quantity": "6.435",
+          "unitPrice": 49.14,
+          "totalPrice": 316.22
+        },
+        {
+          "code": "1070",
+          "description": "Produto 71",
+          "quantity": "6",
+          "unitPrice": 28.74,
+          "totalPrice": 189.86
+        },
+        {
+          "code": "1071",
+          "description": "Produto 72",
+          "quantity": "1.207",
+          "unitPrice": 9.28,
+          "totalPrice": 11.2
+        },
+        {
+          "code": "1072",
+          "description": "Produto 73",
+          "quantity": "5",
+          "unitPrice": 56.54,
+          "totalPrice": 284.17
+        },
+        {
+          "code": "1073",
+          "description": "Produto 74",
+          "quantity": "8.169",
+          "unitPrice": 30.22,
+          "totalPrice": 246.87
+        },
+        {
+          "code": "1074",
+          "description": "Produto 75",
+          "quantity": "9",
+          "unitPrice": 66.04,
+          "totalPrice": 642.11
+        },
+        {
+          "code": "1075",
+          "description": "Produto 76",
+          "quantity": "5.74",
+          "unitPrice": 80.79,
+          "totalPrice": 463.73
+        },
+        {
+          "code": "1076",
+          "description": "Produto 77",
+          "quantity": "3",
+          "unitPrice": 52.21,
+          "totalPrice": 205.03
+        },
+        {
+          "code": "1077",
+          "description": "Produto 78",
+          "quantity": "7.984",
+          "unitPrice": 31.9,
+          "totalPrice": 254.69
+        },
+        {
+          "code": "1078",
+          "description": "Produto 79",
+          "quantity": "8",
+          "unitPrice": 54.92,
+          "totalPrice": 493.57
+        },
+        {
+          "code": "1079",
+          "description": "Produto 80",
+          "quantity": "1.706",
+          "unitPrice": 50.16,
+          "totalPrice": 85.57
+        },
+        {
+          "code": "1080",
+          "description": "Produto 81",
+          "quantity": "6",
+          "unitPrice": 95.22,
+          "totalPrice": 664.06
+        },
+        {
+          "code": "1081",
+          "description": "Produto 82",
+          "quantity": "6.215",
+          "unitPrice": 71.97,
+          "totalPrice": 447.29
+        },
+        {
+          "code": "1082",
+          "description": "Produto 83",
+          "quantity": "2",
+          "unitPrice": 52.53,
+          "totalPrice": 120.61
+        },
+        {
+          "code": "1083",
+          "description": "Produto 84",
+          "quantity": "5.392",
+          "unitPrice": 21.25,
+          "totalPrice": 114.58
+        },
+        {
+          "code": "1084",
+          "description": "Produto 85",
+          "quantity": "1",
+          "unitPrice": 78.22,
+          "totalPrice": 104.19
+        },
+        {
+          "code": "1085",
+          "description": "Produto 86",
+          "quantity": "5.742",
+          "unitPrice": 92.52,
+          "totalPrice": 531.25
+        },
+        {
+          "code": "1086",
+          "description": "Produto 87",
+          "quantity": "9",
+          "unitPrice": 67.27,
+          "totalPrice": 615.25
+        },
+        {
+          "code": "1087",
+          "description": "Produto 88",
+          "quantity": "8.57",
+          "unitPrice": 35.89,
+          "totalPrice": 307.58
+        },
+        {
+          "code": "1088",
+          "description": "Produto 89",
+          "quantity": "3",
+          "unitPrice": 70.2,
+          "totalPrice": 273.64
+        },
+        {
+          "code": "1089",
+          "description": "Produto 90",
+          "quantity": "6",
+          "unitPrice": 59.41,
+          "totalPrice": 356.46
+        },
+        {
+          "code": "1090",
+          "description": "Produto 91",
+          "quantity": "1",
+          "unitPrice": 43.08,
+          "totalPrice": 78.36
+        },
+        {
+          "code": "1091",
+          "description": "Produto 92",
+          "quantity": "5.447",
+          "unitPrice": 1.76,
+          "totalPrice": 9.59
+        },
+        {
+          "code": "1092",
+          "description": "Produto 93",
+          "quantity": "7",
+          "unitPrice": 37.1,
+          "totalPrice": 271.83
+        },
+        {
+          "code": "1093",
+          "description": "Produto 94",
+          "quantity": "5.741",
+          "unitPrice": 82.38,
+          "totalPrice": 472.94
+        },
+        {
+          "code": "1094",
+          "description": "Produto 95",
+          "quantity": "6",
+          "unitPrice": 83.78,
+          "totalPrice": 554.12
+        },
+        {
+          "code": "1095",
+          "description": "Produto 96",
+          "quantity": "8.925",
+          "unitPrice": 12.99,
+          "totalPrice": 115.94
+        },
+        {
+          "code": "1096",
+          "description": "Produto 97",
+          "quantity": "4",
+          "unitPrice": 11.24,
+          "totalPrice": 53.49
+        },
+        {
+          "code": "1097",
+          "description": "Produto 98",
+          "quantity": "8.468",
+          "unitPrice": 46.42,
+          "totalPrice": 393.08
+        },
+        {
+          "code": "1098",
+          "description": "Produto 99",
+          "quantity": "8",
+          "unitPrice": 77.22,
+          "totalPrice": 663.71
+        },
+        {
+          "code": "1099",
+          "description": "Produto 100",
+          "quantity": "6.033",
+          "unitPrice": 27.02,
+          "totalPrice": 163.01
+        }
+      ],
+      "total": 26108.05
+    },
+    {
+      "id": "9c88",
+      "orderNumber": "RUJ357",
+      "orderDate": "2025-10-31T22:39:24.784Z",
+      "items": [
+        {
+          "code": "1000",
+          "description": "Produto 1",
+          "quantity": "10",
+          "unitPrice": 70.76,
+          "totalPrice": 720.9
+        },
+        {
+          "code": "1001",
+          "description": "Produto 2",
+          "quantity": "6.881",
+          "unitPrice": 13.65,
+          "totalPrice": 93.93
+        },
+        {
+          "code": "1002",
+          "description": "Produto 3",
+          "quantity": "2",
+          "unitPrice": 98.25,
+          "totalPrice": 259.28
+        },
+        {
+          "code": "1003",
+          "description": "Produto 4",
+          "quantity": "5.393",
+          "unitPrice": 66.3,
+          "totalPrice": 357.56
+        },
+        {
+          "code": "1004",
+          "description": "Produto 5",
+          "quantity": "3",
+          "unitPrice": 86.54,
+          "totalPrice": 279.35
+        },
+        {
+          "code": "1005",
+          "description": "Produto 6",
+          "quantity": "10.567",
+          "unitPrice": 58.2,
+          "totalPrice": 615
+        },
+        {
+          "code": "1006",
+          "description": "Produto 7",
+          "quantity": "6",
+          "unitPrice": 35.33,
+          "totalPrice": 223.82
+        },
+        {
+          "code": "1007",
+          "description": "Produto 8",
+          "quantity": "9.611",
+          "unitPrice": 0.6,
+          "totalPrice": 5.77
+        },
+        {
+          "code": "1008",
+          "description": "Produto 9",
+          "quantity": "6",
+          "unitPrice": 1.25,
+          "totalPrice": 8.68
+        },
+        {
+          "code": "1009",
+          "description": "Produto 10",
+          "quantity": "8.049",
+          "unitPrice": 2.52,
+          "totalPrice": 20.28
+        },
+        {
+          "code": "1010",
+          "description": "Produto 11",
+          "quantity": "8",
+          "unitPrice": 54.42,
+          "totalPrice": 470.46
+        },
+        {
+          "code": "1011",
+          "description": "Produto 12",
+          "quantity": "10.929",
+          "unitPrice": 39.38,
+          "totalPrice": 430.38
+        },
+        {
+          "code": "1012",
+          "description": "Produto 13",
+          "quantity": "5",
+          "unitPrice": 53.66,
+          "totalPrice": 277.74
+        },
+        {
+          "code": "1013",
+          "description": "Produto 14",
+          "quantity": "3.076",
+          "unitPrice": 75.78,
+          "totalPrice": 233.1
+        },
+        {
+          "code": "1014",
+          "description": "Produto 15",
+          "quantity": "10",
+          "unitPrice": 92.46,
+          "totalPrice": 992.93
+        },
+        {
+          "code": "1015",
+          "description": "Produto 16",
+          "quantity": "10.278",
+          "unitPrice": 76.59,
+          "totalPrice": 787.19
+        },
+        {
+          "code": "1016",
+          "description": "Produto 17",
+          "quantity": "2",
+          "unitPrice": 40.27,
+          "totalPrice": 99.95
+        },
+        {
+          "code": "1017",
+          "description": "Produto 18",
+          "quantity": "9.641",
+          "unitPrice": 65.23,
+          "totalPrice": 628.88
+        },
+        {
+          "code": "1018",
+          "description": "Produto 19",
+          "quantity": "2",
+          "unitPrice": 21.17,
+          "totalPrice": 42.98
+        },
+        {
+          "code": "1019",
+          "description": "Produto 20",
+          "quantity": "8.632",
+          "unitPrice": 62.17,
+          "totalPrice": 536.65
+        },
+        {
+          "code": "1020",
+          "description": "Produto 21",
+          "quantity": "2",
+          "unitPrice": 0.14,
+          "totalPrice": 0.4
+        },
+        {
+          "code": "1021",
+          "description": "Produto 22",
+          "quantity": "9.262",
+          "unitPrice": 15.65,
+          "totalPrice": 144.95
+        },
+        {
+          "code": "1022",
+          "description": "Produto 23",
+          "quantity": "9",
+          "unitPrice": 42.61,
+          "totalPrice": 397.21
+        },
+        {
+          "code": "1023",
+          "description": "Produto 24",
+          "quantity": "3.638",
+          "unitPrice": 21.5,
+          "totalPrice": 78.22
+        },
+        {
+          "code": "1024",
+          "description": "Produto 25",
+          "quantity": "5",
+          "unitPrice": 23.28,
+          "totalPrice": 120.54
+        },
+        {
+          "code": "1025",
+          "description": "Produto 26",
+          "quantity": "9.826",
+          "unitPrice": 57.49,
+          "totalPrice": 564.9
+        },
+        {
+          "code": "1026",
+          "description": "Produto 27",
+          "quantity": "5",
+          "unitPrice": 40.11,
+          "totalPrice": 216.31
+        },
+        {
+          "code": "1027",
+          "description": "Produto 28",
+          "quantity": "2.05",
+          "unitPrice": 53.97,
+          "totalPrice": 110.64
+        },
+        {
+          "code": "1028",
+          "description": "Produto 29",
+          "quantity": "6",
+          "unitPrice": 45.15,
+          "totalPrice": 274.69
+        },
+        {
+          "code": "1029",
+          "description": "Produto 30",
+          "quantity": "3.686",
+          "unitPrice": 29.07,
+          "totalPrice": 107.15
+        },
+        {
+          "code": "1030",
+          "description": "Produto 31",
+          "quantity": "6",
+          "unitPrice": 59.31,
+          "totalPrice": 393.28
+        },
+        {
+          "code": "1031",
+          "description": "Produto 32",
+          "quantity": "8.524",
+          "unitPrice": 15.26,
+          "totalPrice": 130.08
+        },
+        {
+          "code": "1032",
+          "description": "Produto 33",
+          "quantity": "1",
+          "unitPrice": 22.22,
+          "totalPrice": 22.24
+        },
+        {
+          "code": "1033",
+          "description": "Produto 34",
+          "quantity": "3.514",
+          "unitPrice": 59.24,
+          "totalPrice": 208.17
+        },
+        {
+          "code": "1034",
+          "description": "Produto 35",
+          "quantity": "7",
+          "unitPrice": 87.34,
+          "totalPrice": 636.27
+        },
+        {
+          "code": "1035",
+          "description": "Produto 36",
+          "quantity": "2.568",
+          "unitPrice": 98.92,
+          "totalPrice": 254.03
+        },
+        {
+          "code": "1036",
+          "description": "Produto 37",
+          "quantity": "8",
+          "unitPrice": 90.61,
+          "totalPrice": 777.52
+        },
+        {
+          "code": "1037",
+          "description": "Produto 38",
+          "quantity": "5.286",
+          "unitPrice": 93.34,
+          "totalPrice": 493.4
+        },
+        {
+          "code": "1038",
+          "description": "Produto 39",
+          "quantity": "10",
+          "unitPrice": 81.17,
+          "totalPrice": 883.62
+        },
+        {
+          "code": "1039",
+          "description": "Produto 40",
+          "quantity": "1.286",
+          "unitPrice": 99.29,
+          "totalPrice": 127.69
+        },
+        {
+          "code": "1040",
+          "description": "Produto 41",
+          "quantity": "3",
+          "unitPrice": 37.16,
+          "totalPrice": 113.82
+        },
+        {
+          "code": "1041",
+          "description": "Produto 42",
+          "quantity": "9.947",
+          "unitPrice": 52.46,
+          "totalPrice": 521.82
+        },
+        {
+          "code": "1042",
+          "description": "Produto 43",
+          "quantity": "1",
+          "unitPrice": 31.3,
+          "totalPrice": 31.64
+        },
+        {
+          "code": "1043",
+          "description": "Produto 44",
+          "quantity": "1.098",
+          "unitPrice": 79.08,
+          "totalPrice": 86.83
+        },
+        {
+          "code": "1044",
+          "description": "Produto 45",
+          "quantity": "5",
+          "unitPrice": 51.25,
+          "totalPrice": 299.92
+        },
+        {
+          "code": "1045",
+          "description": "Produto 46",
+          "quantity": "9.014",
+          "unitPrice": 31.32,
+          "totalPrice": 282.32
+        },
+        {
+          "code": "1046",
+          "description": "Produto 47",
+          "quantity": "4",
+          "unitPrice": 82.13,
+          "totalPrice": 343.88
+        },
+        {
+          "code": "1047",
+          "description": "Produto 48",
+          "quantity": "1.667",
+          "unitPrice": 23.25,
+          "totalPrice": 38.76
+        },
+        {
+          "code": "1048",
+          "description": "Produto 49",
+          "quantity": "2",
+          "unitPrice": 82.36,
+          "totalPrice": 193.79
+        },
+        {
+          "code": "1049",
+          "description": "Produto 50",
+          "quantity": "2.846",
+          "unitPrice": 14.54,
+          "totalPrice": 41.38
+        },
+        {
+          "code": "1050",
+          "description": "Produto 51",
+          "quantity": "3",
+          "unitPrice": 23.64,
+          "totalPrice": 81.51
+        },
+        {
+          "code": "1051",
+          "description": "Produto 52",
+          "quantity": "2.752",
+          "unitPrice": 47.38,
+          "totalPrice": 130.39
+        },
+        {
+          "code": "1052",
+          "description": "Produto 53",
+          "quantity": "3",
+          "unitPrice": 20.63,
+          "totalPrice": 71.28
+        },
+        {
+          "code": "1053",
+          "description": "Produto 54",
+          "quantity": "5.245",
+          "unitPrice": 96.58,
+          "totalPrice": 506.56
+        },
+        {
+          "code": "1054",
+          "description": "Produto 55",
+          "quantity": "2",
+          "unitPrice": 4.78,
+          "totalPrice": 11.92
+        },
+        {
+          "code": "1055",
+          "description": "Produto 56",
+          "quantity": "8.577",
+          "unitPrice": 90.42,
+          "totalPrice": 775.53
+        },
+        {
+          "code": "1056",
+          "description": "Produto 57",
+          "quantity": "10",
+          "unitPrice": 36.35,
+          "totalPrice": 379.93
+        },
+        {
+          "code": "1057",
+          "description": "Produto 58",
+          "quantity": "1.024",
+          "unitPrice": 73.5,
+          "totalPrice": 75.26
+        },
+        {
+          "code": "1058",
+          "description": "Produto 59",
+          "quantity": "6",
+          "unitPrice": 81.98,
+          "totalPrice": 506.23
+        },
+        {
+          "code": "1059",
+          "description": "Produto 60",
+          "quantity": "2.489",
+          "unitPrice": 8.31,
+          "totalPrice": 20.68
+        },
+        {
+          "code": "1060",
+          "description": "Produto 61",
+          "quantity": "9",
+          "unitPrice": 64.4,
+          "totalPrice": 628.61
+        },
+        {
+          "code": "1061",
+          "description": "Produto 62",
+          "quantity": "6.142",
+          "unitPrice": 83.55,
+          "totalPrice": 513.16
+        },
+        {
+          "code": "1062",
+          "description": "Produto 63",
+          "quantity": "7",
+          "unitPrice": 2.21,
+          "totalPrice": 16.65
+        },
+        {
+          "code": "1063",
+          "description": "Produto 64",
+          "quantity": "3.632",
+          "unitPrice": 78.8,
+          "totalPrice": 286.2
+        },
+        {
+          "code": "1064",
+          "description": "Produto 65",
+          "quantity": "1",
+          "unitPrice": 71.06,
+          "totalPrice": 78.17
+        },
+        {
+          "code": "1065",
+          "description": "Produto 66",
+          "quantity": "4.872",
+          "unitPrice": 67.46,
+          "totalPrice": 328.67
+        },
+        {
+          "code": "1066",
+          "description": "Produto 67",
+          "quantity": "10",
+          "unitPrice": 79.79,
+          "totalPrice": 838.27
+        },
+        {
+          "code": "1067",
+          "description": "Produto 68",
+          "quantity": "9.171",
+          "unitPrice": 58.92,
+          "totalPrice": 540.36
+        },
+        {
+          "code": "1068",
+          "description": "Produto 69",
+          "quantity": "3",
+          "unitPrice": 91.38,
+          "totalPrice": 327.87
+        },
+        {
+          "code": "1069",
+          "description": "Produto 70",
+          "quantity": "9.768",
+          "unitPrice": 38.02,
+          "totalPrice": 371.38
+        },
+        {
+          "code": "1070",
+          "description": "Produto 71",
+          "quantity": "6",
+          "unitPrice": 70.2,
+          "totalPrice": 452.65
+        },
+        {
+          "code": "1071",
+          "description": "Produto 72",
+          "quantity": "1.858",
+          "unitPrice": 63.78,
+          "totalPrice": 118.5
+        },
+        {
+          "code": "1072",
+          "description": "Produto 73",
+          "quantity": "3",
+          "unitPrice": 80.53,
+          "totalPrice": 276.54
+        },
+        {
+          "code": "1073",
+          "description": "Produto 74",
+          "quantity": "10.492",
+          "unitPrice": 42.69,
+          "totalPrice": 447.9
+        },
+        {
+          "code": "1074",
+          "description": "Produto 75",
+          "quantity": "2",
+          "unitPrice": 39.14,
+          "totalPrice": 103.53
+        },
+        {
+          "code": "1075",
+          "description": "Produto 76",
+          "quantity": "2.702",
+          "unitPrice": 49.79,
+          "totalPrice": 134.53
+        },
+        {
+          "code": "1076",
+          "description": "Produto 77",
+          "quantity": "10",
+          "unitPrice": 28.38,
+          "totalPrice": 286.58
+        },
+        {
+          "code": "1077",
+          "description": "Produto 78",
+          "quantity": "4.264",
+          "unitPrice": 56.49,
+          "totalPrice": 240.87
+        },
+        {
+          "code": "1078",
+          "description": "Produto 79",
+          "quantity": "6",
+          "unitPrice": 68.46,
+          "totalPrice": 446.15
+        },
+        {
+          "code": "1079",
+          "description": "Produto 80",
+          "quantity": "2.767",
+          "unitPrice": 48.38,
+          "totalPrice": 133.87
+        },
+        {
+          "code": "1080",
+          "description": "Produto 81",
+          "quantity": "4",
+          "unitPrice": 82.25,
+          "totalPrice": 353.68
+        },
+        {
+          "code": "1081",
+          "description": "Produto 82",
+          "quantity": "5.119",
+          "unitPrice": 97.16,
+          "totalPrice": 497.36
+        },
+        {
+          "code": "1082",
+          "description": "Produto 83",
+          "quantity": "7",
+          "unitPrice": 12.86,
+          "totalPrice": 97.11
+        },
+        {
+          "code": "1083",
+          "description": "Produto 84",
+          "quantity": "8.964",
+          "unitPrice": 9.23,
+          "totalPrice": 82.74
+        },
+        {
+          "code": "1084",
+          "description": "Produto 85",
+          "quantity": "1",
+          "unitPrice": 72.69,
+          "totalPrice": 102.42
+        },
+        {
+          "code": "1085",
+          "description": "Produto 86",
+          "quantity": "6.589",
+          "unitPrice": 87.86,
+          "totalPrice": 578.91
+        },
+        {
+          "code": "1086",
+          "description": "Produto 87",
+          "quantity": "3",
+          "unitPrice": 9.8,
+          "totalPrice": 32.61
+        },
+        {
+          "code": "1087",
+          "description": "Produto 88",
+          "quantity": "5.905",
+          "unitPrice": 97.03,
+          "totalPrice": 572.96
+        },
+        {
+          "code": "1088",
+          "description": "Produto 89",
+          "quantity": "2",
+          "unitPrice": 96.32,
+          "totalPrice": 198.32
+        },
+        {
+          "code": "1089",
+          "description": "Produto 90",
+          "quantity": "1.277",
+          "unitPrice": 1.98,
+          "totalPrice": 2.53
+        },
+        {
+          "code": "1090",
+          "description": "Produto 91",
+          "quantity": "8",
+          "unitPrice": 45.63,
+          "totalPrice": 386.21
+        },
+        {
+          "code": "1091",
+          "description": "Produto 92",
+          "quantity": "5.522",
+          "unitPrice": 24.18,
+          "totalPrice": 133.52
+        },
+        {
+          "code": "1092",
+          "description": "Produto 93",
+          "quantity": "8",
+          "unitPrice": 3.12,
+          "totalPrice": 26.3
+        },
+        {
+          "code": "1093",
+          "description": "Produto 94",
+          "quantity": "10.505",
+          "unitPrice": 13.68,
+          "totalPrice": 143.71
+        },
+        {
+          "code": "1094",
+          "description": "Produto 95",
+          "quantity": "4",
+          "unitPrice": 35.96,
+          "totalPrice": 160.06
+        },
+        {
+          "code": "1095",
+          "description": "Produto 96",
+          "quantity": "2.048",
+          "unitPrice": 33.9,
+          "totalPrice": 69.43
+        },
+        {
+          "code": "1096",
+          "description": "Produto 97",
+          "quantity": "2",
+          "unitPrice": 7.27,
+          "totalPrice": 15.59
+        },
+        {
+          "code": "1097",
+          "description": "Produto 98",
+          "quantity": "8.692",
+          "unitPrice": 0.84,
+          "totalPrice": 7.3
+        },
+        {
+          "code": "1098",
+          "description": "Produto 99",
+          "quantity": "1",
+          "unitPrice": 12.03,
+          "totalPrice": 23.33
+        },
+        {
+          "code": "1099",
+          "description": "Produto 100",
+          "quantity": "10.148",
+          "unitPrice": 54.37,
+          "totalPrice": 551.75
+        }
+      ],
+      "total": 27133.12
     }
   ]
 }
