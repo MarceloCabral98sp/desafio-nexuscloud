@@ -1,1 +1,20 @@
-<p>{{ order | json }}</p>
+<section>
+  <app-order-header [orderNumber]="order.orderNumber"></app-order-header>
+  <app-order-table
+    #orderTable
+    (orderItemsChange)="onOrdemItemsChange($event)"
+    (totalItemsChange)="onTotalItemsChange($event)"
+  >
+  </app-order-table>
+  <div class="actions">
+    <button
+      [disabled]="!orderTable.isFormValid"
+      type="button"
+      (click)="saveOrder()"
+    >
+      💾 Salvar Pedido
+    </button>
+  </div>
+
+  <app-order-total [total]="order.total"></app-order-total>
+</section>

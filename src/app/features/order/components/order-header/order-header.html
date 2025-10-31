@@ -1,0 +1,19 @@
+<div class="order-header">
+  <div class="field">
+    <label>Número do Pedido</label>
+    <input type="text" [value]="orderNumber" readonly />
+  </div>
+
+  <div class="field">
+    <label>Data do Pedido</label>
+    <input type="date" [formControl]="dataControl" [max]="today" />
+  </div>
+</div>
+
+<!-- 
+<mat-form-field appearance="fill">
+  <mat-label>Data do Pedido</mat-label>
+  <input matInput [matDatepicker]="picker" [(ngModel)]="orderDate" [max]="today">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field> -->
