@@ -60,6 +60,8 @@ export class OrderTable implements OnInit {
     allowNegative: false,
   };
 
+  private uniqueId = 0;
+
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
@@ -94,6 +96,7 @@ export class OrderTable implements OnInit {
 
   public createItemGroup(item?: OrderItem): FormGroup {
     return this.fb.group({
+      id: [this.uniqueId++],
       code: [item?.code || null, [Validators.required, Validators.min(0)]],
       description: [
         item?.description || '',
@@ -118,7 +121,7 @@ export class OrderTable implements OnInit {
     ['quantity', 'unitPrice', 'totalPrice'].forEach((field) => {
       group
         .get(field)
-        ?.valueChanges.pipe(debounceTime(150)) // ajustável conforme sua necessidade
+        ?.valueChanges.pipe(debounceTime(150))
         .subscribe(() => {
           this.recalculatePrices(
             group,
@@ -144,9 +147,12 @@ export class OrderTable implements OnInit {
         .toFixed(2)
     );
 
-    this.orderItemsChange.emit(
-      this.itemsFormArray.getRawValue() as OrderItem[]
-    );
+
+    const itemsToEmit: OrderItem[] = this.itemsFormArray
+      .getRawValue()
+      .map(({ id, ...rest }) => rest);
+
+    this.orderItemsChange.emit(itemsToEmit);
     this.totalItemsChange.emit(total);
   }
 
@@ -246,7 +252,7 @@ export class OrderTable implements OnInit {
     input.setSelectionRange(input.value.length, input.value.length);
   }
 
-  public trackByIndex(index: number): number {
-    return index;
+  public trackById(index: number, item: AbstractControl): number {
+    return item.get('id')?.value;
   }
 }

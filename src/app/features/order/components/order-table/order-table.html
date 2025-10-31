@@ -12,7 +12,7 @@
   <!-- Itens -->
   <div formArrayName="items">
     <div
-      *ngFor="let item of itemsFormArray.controls; let i = index; trackBy: trackByIndex"
+      *ngFor="let item of itemsFormArray.controls; let i = index; trackBy: trackById"
       [formGroupName]="i"
       class="order-grid row"
       (keydown.enter)="onEnterKey(i, $event)"
