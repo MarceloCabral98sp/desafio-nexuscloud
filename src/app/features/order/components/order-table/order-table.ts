@@ -21,6 +21,11 @@ import {
 import { CommonModule } from '@angular/common';
 import { CurrencyMaskModule } from 'ng2-currency-mask';
 import { QuantityMask } from '../../../../core/directives/quantity-mask';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { debounceTime } from 'rxjs';
 
 @Component({
   selector: 'app-order-table',
@@ -29,10 +34,14 @@ import { QuantityMask } from '../../../../core/directives/quantity-mask';
     CommonModule,
     CurrencyMaskModule,
     QuantityMask,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   templateUrl: './order-table.html',
   styleUrl: './order-table.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OrderTable implements OnInit {
   public form!: FormGroup;
@@ -109,12 +118,13 @@ export class OrderTable implements OnInit {
     ['quantity', 'unitPrice', 'totalPrice'].forEach((field) => {
       group
         .get(field)
-        ?.valueChanges.subscribe(() =>
+        ?.valueChanges.pipe(debounceTime(150)) // ajustável conforme sua necessidade
+        .subscribe(() => {
           this.recalculatePrices(
             group,
             field as 'quantity' | 'unitPrice' | 'totalPrice'
-          )
-        );
+          );
+        });
     });
   }
 
@@ -126,10 +136,11 @@ export class OrderTable implements OnInit {
   public updateTotal() {
     const total = parseFloat(
       this.itemsFormArray.controls
-        .reduce(
-          (sum, group) => sum + Number(group.get('totalPrice')?.value || 0),
-          0
-        )
+        .reduce((sum, group) => {
+          const quantity = Number(group.get('quantity')?.value) || 0;
+          const unitPrice = Number(group.get('unitPrice')?.value) || 0;
+          return sum + quantity * unitPrice;
+        }, 0)
         .toFixed(2)
     );
 
@@ -147,14 +158,15 @@ export class OrderTable implements OnInit {
     const unitPrice = Number(group.get('unitPrice')?.value) || 0;
     const totalPrice = Number(group.get('totalPrice')?.value) || 0;
 
-    const round2 = (value: number) => parseFloat(value.toFixed(2));
-
     switch (source) {
       case 'unitPrice':
-        if (quantity > 0) {
+      case 'quantity':
+        if (quantity > 0 && unitPrice > 0) {
           group
             .get('totalPrice')
-            ?.setValue(round2(quantity * unitPrice), { emitEvent: false });
+            ?.setValue(parseFloat((quantity * unitPrice).toFixed(2)), {
+              emitEvent: false,
+            });
         }
         break;
 
@@ -162,19 +174,9 @@ export class OrderTable implements OnInit {
         if (quantity > 0) {
           group
             .get('unitPrice')
-            ?.setValue(round2(totalPrice / quantity), { emitEvent: false });
-        }
-        break;
-
-      case 'quantity':
-        if (unitPrice > 0) {
-          group
-            .get('totalPrice')
-            ?.setValue(round2(quantity * unitPrice), { emitEvent: false });
-        } else if (totalPrice > 0 && quantity > 0) {
-          group
-            .get('unitPrice')
-            ?.setValue(round2(totalPrice / quantity), { emitEvent: false });
+            ?.setValue(parseFloat((totalPrice / quantity).toFixed(2)), {
+              emitEvent: false,
+            });
         }
         break;
     }
@@ -183,27 +185,25 @@ export class OrderTable implements OnInit {
   }
 
   public onEnterKey(index: number, event: Event) {
-  event.preventDefault();
-  const itemGroup = this.itemsFormArray.at(index);
+    event.preventDefault();
+    const itemGroup = this.itemsFormArray.at(index);
 
-  if (itemGroup.valid) {
-    this.addItem();
-    setTimeout(() => {
-      const lastInput = this.rowInputs.last;
-      if (lastInput) lastInput.nativeElement.focus();
-    }, 0);
-  } else {
-    itemGroup.markAllAsTouched();
+    if (itemGroup.valid) {
+      this.addItem();
+      setTimeout(() => {
+        const lastInput = this.rowInputs.last;
+        if (lastInput) lastInput.nativeElement.focus();
+      }, 0);
+    } else {
+      itemGroup.markAllAsTouched();
+    }
   }
-}
-
 
   get isFormValid(): boolean {
     return this.form.valid && this.itemsFormArray.length > 0;
   }
 
   public generateFakeItems() {
-
     for (let i = 0; i < 600; i++) {
       const quantity = +(Math.random() * 10 + 1).toFixed(3);
       const unitPrice = +(Math.random() * 100).toFixed(2);

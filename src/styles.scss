@@ -1,23 +1,34 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@use "@angular/material" as mat;
 
+// Angular Material theme
 html {
-  font-family: 'Roboto', sans-serif;
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$azure-palette,
+        tertiary: mat.$blue-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
+
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 body {
   min-height: 100vh;
-  background-color: #fff;
-  color: #333;
+  margin: 0;
+  background-color: var(--mat-sys-surface, #fff);
+  color: var(--mat-sys-on-surface, #333);
+  font: var(--mat-sys-body-medium, 1rem/1.5 "Roboto", sans-serif);
+  color-scheme: light;
+  height: 100%;
 }
 
 a {
@@ -53,3 +64,23 @@ select {
 button {
   cursor: pointer;
 }
+
+// Aplicar padding padrão nas seções da app
+section,
+main,
+.app-container {
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+
+.order-form mat-form-field {
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.order-header mat-form-field {
+  width: 150px; 
+}
+
+

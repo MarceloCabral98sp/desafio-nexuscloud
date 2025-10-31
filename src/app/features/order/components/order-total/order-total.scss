@@ -1,16 +1,21 @@
-.order-total {
+.order-total-card {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  font-size: 1.1rem;
-  padding: 1rem;
-  border-top: 1px solid #ccc;
+  padding: 16px;
 
-  strong {
-    margin-right: 0.5rem;
+  .total-content {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
   }
 
-  span {
+  .total-label {
+    margin-right: 0.5rem;
+    font-weight: 500;
+  }
+
+  .total-value {
     font-weight: bold;
+    color: #1976d2; // azul primário do Material
   }
 }

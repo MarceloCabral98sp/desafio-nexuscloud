@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-order-total',
-  imports: [CommonModule],
+  imports: [CommonModule, MatCardModule],
   templateUrl: './order-total.html',
   styleUrl: './order-total.scss',
 })

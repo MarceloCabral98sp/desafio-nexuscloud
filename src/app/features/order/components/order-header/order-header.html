@@ -1,19 +1,21 @@
 <div class="order-header">
-  <div class="field">
-    <label>Número do Pedido</label>
-    <input type="text" [value]="orderNumber" readonly />
-  </div>
+  <!-- Número do Pedido (readonly) -->
+  <mat-form-field appearance="outline">
+    <mat-label>Número do Pedido</mat-label>
+    <input matInput [value]="orderNumber" readonly>
+  </mat-form-field>
 
-  <div class="field">
-    <label>Data do Pedido</label>
-    <input type="date" [formControl]="dataControl" [max]="today" />
-  </div>
+  <!-- Data do Pedido (apenas calendário, sem digitação) -->
+  <mat-form-field appearance="outline">
+    <mat-label>Data do Pedido</mat-label>
+    <input
+      matInput
+      [matDatepicker]="picker"
+      [value]="orderDate"
+      [max]="today"
+      readonly
+    >
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
 </div>
-
-<!-- 
-<mat-form-field appearance="fill">
-  <mat-label>Data do Pedido</mat-label>
-  <input matInput [matDatepicker]="picker" [(ngModel)]="orderDate" [max]="today">
-  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-  <mat-datepicker #picker></mat-datepicker>
-</mat-form-field> -->

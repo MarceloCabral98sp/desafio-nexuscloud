@@ -1,4 +1,6 @@
-<div class="order-total">
-  <strong>Total geral:</strong>
-  <span>{{ total | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</span>
-</div>
+<mat-card class="order-total-card">
+  <mat-card-content class="total-content">
+    <span class="total-label">Total Geral:</span>
+    <span class="total-value">{{ total | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</span>
+  </mat-card-content>
+</mat-card>

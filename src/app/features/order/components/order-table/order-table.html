@@ -1,4 +1,5 @@
 <form [formGroup]="form" class="order-form">
+  <!-- Cabeçalho -->
   <div class="order-grid header">
     <div>Código</div>
     <div>Descrição</div>
@@ -16,122 +17,155 @@
       class="order-grid row"
       (keydown.enter)="onEnterKey(i, $event)"
     >
+      <!-- Código -->
       <div class="cell">
-        <input
-          #rowInput
-          formControlName="code"
-          placeholder="Código"
-          type="number"
-          pattern="[0-9]*"
-          (keydown)="blockInvalidKeys($event)"
-          (input)="preventNegativeValue(itemsFormArray.at(i), $event)"
-        />
-        <div
-          class="error"
-          *ngIf="item.get('code')?.touched && item.get('code')?.errors"
-        >
-          <ng-container *ngIf="item.get('code')?.errors?.['required']">
-            Código obrigatório.
-          </ng-container>
-          <ng-container *ngIf="item.get('code')?.errors?.['min']">
-            O código não pode ser negativo.
-          </ng-container>
-        </div>
-      </div>
-
-      <div class="cell">
-        <input formControlName="description" placeholder="Descrição" />
-        <div
-          class="error"
-          *ngIf="item.get('description')?.touched && item.get('description')?.errors"
-        >
-          <ng-container *ngIf="item.get('description')?.errors?.['required']">
-            Descrição obrigatória.
-          </ng-container>
-          <ng-container *ngIf="item.get('description')?.errors?.['maxlength']">
-            A descrição deve ter no máximo 100 caracteres.
-          </ng-container>
-        </div>
-      </div>
-
-      <div class="cell">
-        <input
-          formControlName="quantity"
-          type="text"
-          [appQuantityMask]="item.get('code')"
-        />
-        <div
-          class="error"
-          *ngIf="item.get('quantity')?.touched && item.get('quantity')?.errors"
-        >
-          <ng-container *ngIf="item.get('quantity')?.errors?.['required']">
-            Quantidade obrigatória.
-          </ng-container>
-          <ng-container *ngIf="item.get('quantity')?.errors?.['min']">
-            Quantidade deve ser maior que zero.
-          </ng-container>
-          <ng-container
-            *ngIf="item.get('quantity')?.errors?.['invalidPrecision']"
+        <mat-form-field appearance="outline" floatLabel="always">
+          <mat-label>Código</mat-label>
+          <input
+            matInput
+            formControlName="code"
+            #rowInput
+            type="number"
+            placeholder="Ex: 121"
+            (keydown)="blockInvalidKeys($event)"
+            (input)="preventNegativeValue(itemsFormArray.at(i), $event)"
+          />
+          <mat-error
+            *ngIf="item.get('code')?.touched && item.get('code')?.hasError('required')"
           >
-            Quantidade inválida: deve ser inteira para códigos pares ou até 3
-            decimais para ímpares.
-          </ng-container>
-        </div>
+            Código obrigatório.
+          </mat-error>
+          <mat-error
+            *ngIf="item.get('code')?.touched && item.get('code')?.hasError('min')"
+          >
+            O código não pode ser negativo.
+          </mat-error>
+        </mat-form-field>
       </div>
 
+      <!-- Descrição -->
       <div class="cell">
-        <input
-          formControlName="unitPrice"
-          type="text"
-          currencyMask
-          [options]="currencyOptions"
-          (focus)="onFocusCurrency($event)"
-        />
-        <div
-          class="error"
-          *ngIf="item.get('unitPrice')?.touched && item.get('unitPrice')?.errors"
-        >
-          <ng-container *ngIf="item.get('unitPrice')?.errors?.['required']">
+        <mat-form-field appearance="outline" floatLabel="always">
+          <mat-label>Descrição</mat-label>
+          <input
+            matInput
+            formControlName="description"
+            placeholder="Descrição"
+          />
+          <mat-error
+            *ngIf="item.get('description')?.touched && item.get('description')?.hasError('required')"
+          >
+            Descrição obrigatória.
+          </mat-error>
+          <mat-error
+            *ngIf="item.get('description')?.touched && item.get('description')?.hasError('maxlength')"
+          >
+            Máximo de 100 caracteres.
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- Quantidade -->
+      <div class="cell">
+        <mat-form-field appearance="outline" floatLabel="always">
+          <mat-label>Quantidade</mat-label>
+          <input
+            matInput
+            formControlName="quantity"
+            type="text"
+            placeholder="Ex: 12"
+            [appQuantityMask]="item.get('code')"
+          />
+          <mat-error
+            *ngIf="item.get('quantity')?.touched && item.get('quantity')?.hasError('required')"
+          >
+            Quantidade obrigatória.
+          </mat-error>
+          <mat-error
+            *ngIf="item.get('quantity')?.touched && item.get('quantity')?.hasError('min')"
+          >
+            Deve ser maior que zero.
+          </mat-error>
+          <mat-error
+            *ngIf="item.get('quantity')?.touched && item.get('quantity')?.hasError('invalidPrecision')"
+          >
+            Inválida: até 3 decimais (ímpar) ou inteira (par).
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- Unitário -->
+      <div class="cell">
+        <mat-form-field appearance="outline" floatLabel="always">
+          <mat-label>Unitário</mat-label>
+          <input
+            matInput
+            formControlName="unitPrice"
+            type="text"
+            currencyMask
+            [options]="currencyOptions"
+            (focus)="onFocusCurrency($event)"
+          />
+          <mat-error
+            *ngIf="item.get('unitPrice')?.touched && item.get('unitPrice')?.hasError('required')"
+          >
             Valor unitário obrigatório.
-          </ng-container>
-          <ng-container *ngIf="item.get('unitPrice')?.errors?.['min']">
-            Valor unitário deve ser maior que zero.
-          </ng-container>
-        </div>
+          </mat-error>
+          <mat-error
+            *ngIf="item.get('unitPrice')?.touched && item.get('unitPrice')?.hasError('min')"
+          >
+            Deve ser maior que zero.
+          </mat-error>
+        </mat-form-field>
       </div>
 
+      <!-- Total -->
       <div class="cell">
-        <input
-          formControlName="totalPrice"
-          type="text"
-          currencyMask
-          [options]="currencyOptions"
-          (focus)="onFocusCurrency($event)"
-        />
-        <div
-          class="error"
-          *ngIf="item.get('totalPrice')?.touched && item.get('totalPrice')?.errors"
-        >
-          <ng-container *ngIf="item.get('totalPrice')?.errors?.['required']">
+        <mat-form-field appearance="outline" floatLabel="always">
+          <mat-label>Total</mat-label>
+          <input
+            matInput
+            formControlName="totalPrice"
+            type="text"
+            currencyMask
+            [options]="currencyOptions"
+            (focus)="onFocusCurrency($event)"
+          />
+          <mat-error
+            *ngIf="item.get('totalPrice')?.touched && item.get('totalPrice')?.hasError('required')"
+          >
             Valor total obrigatório.
-          </ng-container>
-          <ng-container *ngIf="item.get('totalPrice')?.errors?.['min']">
-            Valor total deve ser maior que zero.
-          </ng-container>
-        </div>
+          </mat-error>
+          <mat-error
+            *ngIf="item.get('totalPrice')?.touched && item.get('totalPrice')?.hasError('min')"
+          >
+            Deve ser maior que zero.
+          </mat-error>
+        </mat-form-field>
       </div>
 
+      <!-- Ações -->
       <div class="cell actions">
-        <button type="button" (click)="removeItem(i)">Excluir</button>
+        <button type="button" (click)="removeItem(i)" class="delete-btn">
+          <span class="material-icons">delete</span> Excluir
+        </button>
       </div>
     </div>
-
-    <button type="button" (click)="generateFakeItems()">
-      + Gerar 100 Itens
-    </button>
   </div>
 
-  <div class="add-row">
-    <button type="button" (click)="addItem()">+ Adicionar Item</button>
+  <!-- Botões -->
+  <div class="actions-row">
+    <button mat-flat-button color="primary" type="button" (click)="addItem()">
+      + Adicionar Item
+    </button>
+
+    <button
+      mat-stroked-button
+      color="accent"
+      type="button"
+      (click)="generateFakeItems()"
+    >
+      + Gerar 100 Itens
+    </button>
   </div>
 </form>

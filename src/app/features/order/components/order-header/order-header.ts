@@ -1,26 +1,26 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @Component({
   selector: 'app-order-header',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [
+    CommonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+  ],
   templateUrl: './order-header.html',
-  styleUrl: './order-header.scss',
+  styleUrls: ['./order-header.scss']
 })
-export class OrderHeader implements OnInit {
-
-  // TODO - IMPLEMENTAR DATEPICKER DO MATEIRAL PARA CORRIGIR CAMPO DATA
-  // NÃO ACEITANDO DATAS FUTURAS
+export class OrderHeader {
+  
   @Input() orderNumber!: string;
-  @Input() orderDate!: Date;
-
-  public today = new Date().toISOString().split('T')[0];
-  public dataControl = new FormControl();
-
-  ngOnInit(): void {
-    const dataInicial = this.orderDate ?? new Date();
-    this.dataControl.setValue(dataInicial.toISOString().split('T')[0]);
-  }
+  @Input() orderDate: Date = new Date();
+  public today: Date = new Date();
 }

@@ -1,3 +1,43 @@
-section {
-    margin: 16px;
+.order-page {
+  padding: 24px 16px 90px; 
+}
+
+.order-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--mat-sys-surface-container, #fff);
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.08);
+  padding: 24px 16px;
+  z-index: 1000;
+
+  app-order-total {
+    flex: 1; 
+  }
+
+  button {
+    margin-left: 16px;
+    min-width: 160px;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+
+    button {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    app-order-total {
+      text-align: center;
+    }
+  }
 }

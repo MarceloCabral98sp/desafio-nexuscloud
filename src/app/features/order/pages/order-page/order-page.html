@@ -1,20 +1,22 @@
-<section>
+<section class="order-page">
   <app-order-header [orderNumber]="order.orderNumber"></app-order-header>
+  
   <app-order-table
     #orderTable
     (orderItemsChange)="onOrdemItemsChange($event)"
     (totalItemsChange)="onTotalItemsChange($event)"
   >
   </app-order-table>
-  <div class="actions">
-    <button
-      [disabled]="!orderTable.isFormValid"
-      type="button"
-      (click)="saveOrder()"
-    >
-      💾 Salvar Pedido
-    </button>
-  </div>
+  
+  <footer class="order-footer">
+    <app-order-total [total]="order.total"></app-order-total>
 
-  <app-order-total [total]="order.total"></app-order-total>
+    <button
+      mat-flat-button
+      color="primary"
+      [disabled]="!orderTable.isFormValid"
+      (click)="saveOrder()">
+        Salvar Pedido
+    </button>
+  </footer> 
 </section>
