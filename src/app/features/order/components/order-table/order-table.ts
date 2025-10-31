@@ -210,7 +210,7 @@ export class OrderTable implements OnInit {
   }
 
   public generateFakeItems() {
-    for (let i = 0; i < 600; i++) {
+    for (let i = 0; i < 100; i++) {
       const quantity = +(Math.random() * 10 + 1).toFixed(3);
       const unitPrice = +(Math.random() * 100).toFixed(2);
       const totalPrice = +(quantity * unitPrice).toFixed(2);
