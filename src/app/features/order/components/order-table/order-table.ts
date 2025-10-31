@@ -1,4 +1,5 @@
 import {
+  ChangeDetectionStrategy,
   Component,
   ElementRef,
   EventEmitter,
@@ -31,6 +32,7 @@ import { QuantityMask } from '../../../../core/directives/quantity-mask';
   ],
   templateUrl: './order-table.html',
   styleUrl: './order-table.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OrderTable implements OnInit {
   public form!: FormGroup;
@@ -131,7 +133,9 @@ export class OrderTable implements OnInit {
         .toFixed(2)
     );
 
-    this.orderItemsChange.emit(this.itemsFormArray.getRawValue() as OrderItem[]);
+    this.orderItemsChange.emit(
+      this.itemsFormArray.getRawValue() as OrderItem[]
+    );
     this.totalItemsChange.emit(total);
   }
 
@@ -179,25 +183,28 @@ export class OrderTable implements OnInit {
   }
 
   public onEnterKey(index: number, event: Event) {
-    event.preventDefault();
-    const itemGroup = this.itemsFormArray.at(index);
+  event.preventDefault();
+  const itemGroup = this.itemsFormArray.at(index);
 
+  if (itemGroup.valid) {
     this.addItem();
-
     setTimeout(() => {
       const lastInput = this.rowInputs.last;
       if (lastInput) lastInput.nativeElement.focus();
     }, 0);
+  } else {
+    itemGroup.markAllAsTouched();
   }
+}
+
 
   get isFormValid(): boolean {
     return this.form.valid && this.itemsFormArray.length > 0;
   }
 
   public generateFakeItems() {
-    this.itemsFormArray.clear();
 
-    for (let i = 0; i < 150; i++) {
+    for (let i = 0; i < 600; i++) {
       const quantity = +(Math.random() * 10 + 1).toFixed(3);
       const unitPrice = +(Math.random() * 100).toFixed(2);
       const totalPrice = +(quantity * unitPrice).toFixed(2);
@@ -224,18 +231,22 @@ export class OrderTable implements OnInit {
   }
 
   public preventNegativeValue(control: AbstractControl, event: Event) {
-  const input = event.target as HTMLInputElement;
-  let value = Number(input.value);
+    const input = event.target as HTMLInputElement;
+    let value = Number(input.value);
 
-  if (value < 0) {
-    value = 0;
-    input.value = '0';
-    (control as FormGroup).get('code')?.setValue(0);
+    if (value < 0) {
+      value = 0;
+      input.value = '0';
+      (control as FormGroup).get('code')?.setValue(0);
+    }
   }
-}
 
   public onFocusCurrency(event: FocusEvent) {
     const input = event.target as HTMLInputElement;
     input.setSelectionRange(input.value.length, input.value.length);
+  }
+
+  public trackByIndex(index: number): number {
+    return index;
   }
 }

@@ -1,5 +1,4 @@
 <form [formGroup]="form" class="order-form">
-  <!-- Cabeçalho -->
   <div class="order-grid header">
     <div>Código</div>
     <div>Descrição</div>
@@ -12,12 +11,11 @@
   <!-- Itens -->
   <div formArrayName="items">
     <div
-      *ngFor="let item of itemsFormArray.controls; let i = index"
+      *ngFor="let item of itemsFormArray.controls; let i = index; trackBy: trackByIndex"
       [formGroupName]="i"
       class="order-grid row"
       (keydown.enter)="onEnterKey(i, $event)"
     >
-      <!-- Código -->
       <div class="cell">
         <input
           #rowInput
@@ -41,7 +39,6 @@
         </div>
       </div>
 
-      <!-- Descrição -->
       <div class="cell">
         <input formControlName="description" placeholder="Descrição" />
         <div
@@ -57,7 +54,6 @@
         </div>
       </div>
 
-      <!-- Quantidade -->
       <div class="cell">
         <input
           formControlName="quantity"
@@ -83,7 +79,6 @@
         </div>
       </div>
 
-      <!-- Unitário -->
       <div class="cell">
         <input
           formControlName="unitPrice"
@@ -105,7 +100,6 @@
         </div>
       </div>
 
-      <!-- Total -->
       <div class="cell">
         <input
           formControlName="totalPrice"
@@ -127,7 +121,6 @@
         </div>
       </div>
 
-      <!-- Ações -->
       <div class="cell actions">
         <button type="button" (click)="removeItem(i)">Excluir</button>
       </div>
@@ -138,7 +131,6 @@
     </button>
   </div>
 
-  <!-- Adicionar item -->
   <div class="add-row">
     <button type="button" (click)="addItem()">+ Adicionar Item</button>
   </div>
