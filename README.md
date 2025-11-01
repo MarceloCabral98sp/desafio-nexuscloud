@@ -1,59 +1,67 @@
-# DesafioNexuscloud
+# Sistema de Lançamento de Pedidos de Venda
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+Este projeto é uma aplicação **SPA (Single Page Application)** desenvolvida em **Angular 16+** com **Angular Material**, cujo objetivo é permitir o lançamento de pedidos de venda, adição e remoção de itens, e o cálculo automático de totais do pedido.  
+O foco está em boas práticas, performance, responsividade e organização do código.
 
-## Development server
+---
 
-To start a local development server, run:
+## Tecnologias Utilizadas
 
-```bash
-ng serve
-```
+- **Angular 16+**
+- **Angular Material**
+- **TypeScript**
+- **RxJS**
+- **JSON Server** (para simular a API backend)
+- **SCSS**
+- **HTML5 / CSS3**
+- **Node.js / NPM**
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Funcionalidades
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Geração automática do número do pedido** (3 letras + 3 números)
+- **Data do pedido automática**, impedindo seleção de datas futuras
+- **Tabela de itens** com as colunas:
+  - Código
+  - Descrição
+  - Quantidade (com máscaras específicas para pares/ímpares)
+  - Valor unitário
+  - Valor total
+- **Cálculo automático** entre valor total e unitário
+- **Somatório do pedido** exibido no rodapé
+- **Exclusão de itens individualmente**
+- **Persistência de dados via JSON Server**
+- **Suporte a mais de 100 itens** sem perda de performance
+- **Layout responsivo** e construído com Angular Material
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Boas Práticas e Padrões
 
-```bash
-ng generate --help
-```
+- **Modularização** por features  
+- **Standalone Components**  
+- **Uso de Services para lógica de negócio**  
+- **Validação e mascaramento de campos**  
+- **Responsividade com Flex Layout e CSS Grid**  
+- **Tratamento de erros e feedback visual**
 
-## Building
+---
 
-To build the project run:
+### 1. Clonar o repositório
 
-```bash
-ng build
-```
+- Baixar o projeto via zip ou executar o comando **git clone https://github.com/MarceloCabral98sp/desafio-nexuscloud.git** localmente
+- **npm i** para baixar as dependências
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## Como Executar o Projeto
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Executar o comando **ng serve** no terminal do projeto para o Frontend
+- Executar o comando **json-server db.json --watch** para a API fake
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Autor:** Marcelo Cabral  
+**Prazo sugerido:** 3 a 5 dias úteis  
+**Desafio Técnico — Nexus Cloud**
