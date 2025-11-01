@@ -63,5 +63,4 @@ O foco está em boas práticas, performance, responsividade e organização do c
 ---
 
 **Autor:** Marcelo Cabral  
-**Prazo sugerido:** 3 a 5 dias úteis  
 **Desafio Técnico — Nexus Cloud**
